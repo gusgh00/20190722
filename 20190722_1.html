@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+        <style>
+            body {
+                padding: 0 auto;
+                margin: 0 auto;
+                font-family: 'Sunflower', sans-serif;
+            }
+            
+            #header {
+	           position: fixed;
+	           left: 0px;
+	           top: 0px;
+	           right: 0px;
+	           width: 100%;
+               height: 60px;
+	           background: #CCFFCC;
+            }
+            #contents {
+                margin-top: 15px;
+                margin-left: 10px;
+                font-size: 30px;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            
+            
+            #notice {
+                position: fixed;
+                top: 60px;
+                left: 0px;
+	            right: 0px;
+                width: 100%;
+                height: 30px;
+                background: #6666dd;
+            }
+            #marquee {
+                margin-top: 5px;
+                color: #fff;
+                font-size: 15px;
+            }
+            
+            
+            ul {
+                list-style:none;
+                margin:0;
+                padding:0;
+            }
+            #contents li {
+                margin: 0 50px 0 0;
+                padding: 0 0 0 0;
+                border : 0;
+                float: left;
+            }
+            #contents a {
+                text-decoration: none;
+                color: #6699CC;
+            }
+            
+            .img {
+                width: 100%;
+            }
+            .face {
+                margin-top: 50px;
+                width: 200px;
+            }
+            
+            
+            .title_wrap {
+                height: 80px;
+                border-bottom: 20px solid #6699CC;
+            }
+            .title {
+                text-align: center;
+                font-size: 50px;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            
+            #profile, #hobby, #contact {
+                padding-top: 90px;
+                margin-bottom: 50px;
+            }
+            #dv {
+                margin-left: 100px;
+            }
+            #pro_file {
+                text-align: center;
+                font-size: 30px
+            }
+            #subject {
+                text-align: center;
+            }
+            #subject li {
+                margin-top: 50px;
+                font-size: 25px;
+                color: #9999cc;
+            }
+            #subject p {
+                font-size: 40px;
+                margin-top: 100px;
+            }
+            
+            #food {
+                text-align: center;
+            }
+            .food1 {
+                width: 300px;
+                margin: 50px;
+            }
+            .food2 {
+                width: 300px;
+                margin: 50px;
+            }
+            .food3 {
+                width: 300px;
+                margin: 50px;
+            }
+            .food4 {
+                width: 300px;
+                margin: 50px;
+            }
+            
+            
+            .contact {
+                text-align: center;
+                margin-bottom: 0;
+                width: 100%;
+                height: 150px;
+                background-image: url(Contents/img/contact.png);
+                padding: 0;
+            }
+            .contact a {
+                font-size: 30px;
+                text-decoration: none;
+            }
+            .contact p {
+                margin-top: 30px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <!--헤더-->
+        <div id="header">
+            <ul id="contents">
+                <li>
+                    <a href="#home">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile">
+                        PROFILE &amp; ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#hobby">
+                        HOBBY
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="notice">
+            <marquee id="marquee" direction="left" scrollamount="9">
+                안녕하세요. 동양미래대학교 컴퓨터정보공학과에 재학중인 19학번 유현호 입니다.  긍정적인 성격으로 실패를 반복 하더라도 성공할 때 까지 손을 놓지 않는 끈기를 가졌습니다. 자바프로그래밍, HTML 과 CSS, 포토샵, MS SQL Server, Exel, Powerpoint, Word에 전공을 가지고 있습니다. 취미는 미디 작곡으로 프로그램과 키보드등의 전자기기를 활용하여 음악을 만들어 냅니다. 
+            </marquee>
+        </div>
+        
+        <!--내용-->
+        <div id="sub">
+            <div id="home">
+                <img class="img" src="Contents/img/home.png">
+            </div>
+            
+            <!--프로필-->
+            <div id="profile">
+                <div class="profile_wrap panel">
+                    <div class="title_wrap">
+                        <p class="title">Profile &amp; About</p>
+                    </div>
+                    <div>
+                        <div id="pro_file">
+                            <img class="face" src="Contents/img/face.jpg">
+                            <p>유현호 Yoo HyeonHo</p>
+                            <p>2000. 10. 10</p>
+                            <p>동양미래대학교</p>
+                            <p>컴퓨터공학부 컴퓨터정보공학과</p>
+                            <p>20190722</p>
+                        </div>
+                        <div id="subject">
+                            <p>Skill</p>
+                            <ul>
+                                <li>자바 프로그래밍</li>
+                                <li>HTML &amp; CSS</li>
+                                <li>포토샵</li>
+                                <li>Ms SQL Sever</li>
+                                <li>Exel, PowerPoint, Word</li>
+                                <li>미디 작곡</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--취미-->
+            <div id="hobby">
+                <div class="hobby_wrap panel">
+                    <div class="title_wrap">
+                        <p class="title">Hobby</p>
+                    </div>
+                    <div id="soundcloud">
+                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/426738846&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                    <div id="food">
+                        <img class="food1" src="Contents/img/food1.jpg">
+                        <img class="food2" src="Contents/img/food2.jpg">
+                        <img class="food3" src="Contents/img/food3.jpg">
+                        <img class="food4" src="Contents/img/food4.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <!--링크-->
+            <div id="contact">
+                <div class="title_wrap">
+                    <p class="title">Contact</p>
+                </div>
+                <div class="contact">
+                    <a href="mailto:cube9717@naver.com"><p>cube9717@naver.com</p></a>
+                    <p>010-4073-6564</p>
+                    <p>Copyright ⓒ 2019 HyeonHo Yoo All right reserved.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
